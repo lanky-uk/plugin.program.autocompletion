@@ -38,3 +38,7 @@ msgstr "Langue de saisie semi-automatique"
 msgctxt "#32003"
 msgid "Autocompletion provider"
 msgstr "Fournisseur de la saisie automatique"
+
+msgctxt "#32036"
+msgid "Port"
+msgstr ""
