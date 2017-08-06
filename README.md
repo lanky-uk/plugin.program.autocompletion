@@ -23,7 +23,7 @@ Here are the complete installation steps:
 6. Enjoy (hopefully)
 
 I tested this plugin successfully in the following environment:
-Device:         Amazon Fire Tv Stick 1
+1. Device:         Amazon Fire Tv Stick 1
 Firmware:       Fire OS 5.2.4.1
 Platform:       Android
 Kodi:           Kodi 17.3 (Krypton, ARMV7A 32 Bit)
