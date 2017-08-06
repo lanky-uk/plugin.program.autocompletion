@@ -1,3 +1,7 @@
+1.0.1f
+
+- modified JSON calls, added port setting
+
 1.0.1
 
 - cleanup, take over some listitem work from AutoCompletion lib
