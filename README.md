@@ -1,7 +1,7 @@
 # plugin.program.autocompletion
 Plugin to provide autocompletion for the virtual keyboard (needs skin support)
 
-This is a fork of the famous autocompletion plugin by [phil65](https://github.com/phil65).
+This is a fork of the famous [autocompletion](https://github.com/phil65/plugin.program.autocompletion) plugin by [phil65](https://github.com/phil65).
 Since the release of kodi 17 (krypton) phils addon has issues on android devices.
 Therefore I decided to create a workaround for this issue.
 
@@ -29,4 +29,4 @@ I tested this plugin successfully in the following environment:
 - Kodi:           Kodi 17.3 (Krypton, ARMV7A 32 Bit)
 - Skin:           Aeon Nox 5
 
-All credits for this great addon go to phil65 .
+All credits for this great addon go to [phil65](https://github.com/phil65).
