@@ -27,5 +27,6 @@ Device:         Amazon Fire Tv Stick 1
 Firmware:       Fire OS 5.2.4.1
 Platform:       Android
 Kodi:           Kodi 17.3 (Krypton, ARMV7A 32 Bit)
+Skin:           Aeon Nox 5
 
 All credits for this great addon go to phil65 .
