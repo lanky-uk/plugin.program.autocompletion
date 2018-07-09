@@ -25,7 +25,7 @@ def get_xbmc_json(method, params):
     xbmc_port = PORT
     credentials = ""
     if (len(LOGIN) > 0) and (len(PASSWORD) > 0):
-        credentials = LOGIN + ":" + PASSWORD + "@"
+        credentials = urllib.urlencode(LOGIN) + ":" + urllib.urlencode(PASSWORD) + "@"
     xbmc_json_rpc_url = "http://" + credentials + xbmc_host + ":" + str(xbmc_port) + "/jsonrpc"
     payload = {"jsonrpc":"2.0","method":method,"params":params,"id":1}
     url_param = urllib.urlencode({'request': json.dumps(payload)})
