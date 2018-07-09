@@ -16,12 +16,17 @@ import AutoCompletion
 ADDON = xbmcaddon.Addon()
 ADDON_VERSION = ADDON.getAddonInfo('version')
 PORT = int(ADDON.getSetting('port'))
+LOGIN = ADDON.getSetting('login')
+PASSWORD = ADDON.getSetting('password')
 
 def get_xbmc_json(method, params):
     headers = {'content-type': 'application/json'}
     xbmc_host = 'localhost'
     xbmc_port = PORT
-    xbmc_json_rpc_url = "http://" + xbmc_host + ":" + str(xbmc_port) + "/jsonrpc"
+    credentials = ""
+    if (len(LOGIN) > 0) and (len(PASSWORD) > 0):
+        credentials = LOGIN + ":" + PASSWORD + "@"
+    xbmc_json_rpc_url = "http://" + credentials + xbmc_host + ":" + str(xbmc_port) + "/jsonrpc"
     payload = {"jsonrpc":"2.0","method":method,"params":params,"id":1}
     url_param = urllib.urlencode({'request': json.dumps(payload)})
     response = requests.get(xbmc_json_rpc_url + '?' + url_param, 
